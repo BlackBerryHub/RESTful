@@ -1,1 +1,0 @@
-INSERT INTO user VALUES (1,'Marat','Khusnutdinov',1000);

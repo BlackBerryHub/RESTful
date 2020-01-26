@@ -7,13 +7,14 @@ import lombok.ToString;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.math.BigDecimal;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users_rest" )
 @Getter
 @Setter
 @ToString
-public class Model extends ModelID {
+public class Model extends DataBase {
     @Column(name = "name")
     private String firstName;
 
@@ -21,6 +22,6 @@ public class Model extends ModelID {
     private String secondName;
 
     @Column(name = "payment")
-    private int payment;
+    private BigDecimal payment;
 }
 
